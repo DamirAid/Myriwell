@@ -1,0 +1,332 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+.slider-wrap .slide h1{
+	font-size: 38px;
+}
+
+.catalog .buy, .catalog .cell{
+	text-align: center;
+}
+.bottom_mnu ul li a, .top_mnu ul li a{
+	margin-right: 15px;
+	font-size: 11px;
+}
+  .catalog .buy .action, .catalog .buy .button_wrap_buy{
+	margin-bottom: 20px;
+}
+.catalog .img_items .item{
+	display: inline-block;
+}
+footer{
+	text-align: center;	
+}
+form input{
+	    padding: 12px 5px;
+}
+form button{
+	padding: 8px 30px;
+}
+
+.art_btn a{
+    padding: 10px 50px;
+}
+.clock_text span{
+	margin-right: 15px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.bottom_mnu{
+		display: none;
+	}
+	.top_mnu{
+			display: none;
+			position: absolute;
+	 	 	background: rgb(242, 252, 254);
+	   	position: absolute;
+	    top: 50px;
+	    left: 31px;
+	    z-index: 10;
+	    width: 173px;
+	}
+main .catalogy .catalogy_mnu{
+	margin-bottom: 40px;
+}
+main h2{
+	text-align: center;
+}
+.top_mnu ul li{
+	display: block;
+	padding: 15px;
+	border-bottom: 1px solid #fff;
+}
+.toggle_mnu {
+  width: 60px;
+  height: 60px;
+	position: absolute;
+  z-index: 100;
+  border: none;
+  left: 30px;
+  top: -10px;
+   display: block;
+   background-color: #e5f7fc; }
+  .toggle_mnu span {
+    display: block; }
+
+.sandwich {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 200; 
+}
+
+.sw-topper {
+  position: relative;
+  top: 0;
+  width: 28px;
+  height: 3px;
+  background: white;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-transition: -webkit-transform 0.5s, top 0.2s;
+          transition: transform 0.5s, top 0.2s;
+  display: block; }
+
+
+
+.sw-bottom {
+  position: relative;
+  width: 28px;
+  height: 3px;
+  top: 6.6px;
+  background: white;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-transition: -webkit-transform 0.5s, top 0.2s;
+          transition: transform 0.5s, top 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s; }
+
+.sw-footer {
+  position: relative;
+  width: 28px;
+  height: 3px;
+  top: 13.5px;
+  background: white;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
+
+.sandwich.active .sw-topper {
+  top: 9px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+.sandwich.active .sw-bottom {
+  top: 6px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+.sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+           transform: rotate(180deg); }
+.top_line{
+	text-align: center;
+}
+.top_adres, .top_line .top_phone,.top_line .top_quest{
+	margin-top: 20px;
+}
+.top_quest{
+	float: none;
+}
+.catalog{
+	text-align: center;
+}
+.catalog .dostavka ul li{
+	display: inline-block;
+}
+.podarok .right{
+	text-align: center;
+}
+.podarok .right .item{
+	margin-left: 5px;
+
+}
+.podarok .left h2{
+	text-align: center;
+}
+.content .nav_blogs .tabs span{
+	padding: 7px 15px;
+	margin-right: 5px;
+	font-size: 16px;
+}
+.preim{
+	text-align: center;
+}
+.zakazat .item .img_wrap::after{
+	right: -15%;
+}
+.commits, .admin_commit{
+	text-align: center;
+}
+.zakazat .item:nth-child(2n)::after{
+	display: none;
+}
+.zakazat .item{
+	margin-top: 50px;
+}
+.zakazat .item::after{
+	display: none;
+}
+	.search input{
+		width: 50%;
+		font-size: 12px;
+	}
+	.zakazat .item:nth-child(2n){
+		margin-top: 0;
+	}
+	.zakazat .item{
+		margin-top: 0;
+	}
+	main .category .item span{
+		font-size: 10px;
+	}
+	main .category .item a{
+		padding: 0 7px;
+	}
+	main .catalogy .catalogy_mnu{
+		text-align: center;
+	}
+	form input{
+		display: block;
+		margin: 10px auto;
+	}
+	.article{
+		text-align: center;	
+	}
+	.art_btn a{
+		display: inline-block;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+.catalog .button_wrap{
+	 	text-align: center;
+    margin: 20px 0;
+}
+.podarok .right .item{
+	margin-top: 15px;
+	display: block;
+}
+.content .nav_blogs .tabs span{
+	font-size: 13px;
+}
+main .category .item{
+	margin-bottom: 15px;
+}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 580px) {
+.content .nav_blogs .tabs span{
+	font-size: 10px;
+}
+main .catalogy .catalogy_mnu ul li a{
+	font-size: 8px;
+}
+.slider-wrap .slide h1{
+	font-size: 32px;
+}
+#slider_container2 .slide .overlay{
+	  padding: 12px;
+    top: 32%;
+    left: 50%;
+    margin-left: -18px;
+}
+.pagination ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.pagination ul li{
+	margin: 0;
+}
+.pagination ul li a.prev, .pagination ul li a.next{
+	margin: 0;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.top_mnu{
+	display: block !important;
+}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
